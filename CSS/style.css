@@ -1,0 +1,83 @@
+/* === Fuente Nunito local === */
+@font-face {
+  font-family: 'Nunito';
+  src: url('../Nunito/Nunito-Regular.woff2') format('woff2'),
+       url('../Nunito/Nunito-Regular.woff') format('woff'),
+       url('../Nunito/Nunito-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('../Nunito/Nunito-Bold.woff2') format('woff2'),
+       url('../Nunito/Nunito-Bold.woff') format('woff'),
+       url('../Nunito/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+* { box-sizing: border-box; margin:0; padding:0; }
+html, body { height:100%; font-family:'Nunito', system-ui, sans-serif; color:#222; background:#f7f7f7; line-height:1.5; }
+a { text-decoration:none; color:inherit; }
+
+/* Skip link */
+.skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
+.skip-link:focus { left:10px; top:10px; width:auto; height:auto; background:#000; color:#fff; padding:8px; border-radius:4px; z-index:1000; }
+
+/* HEADER */
+.site-header { background:#fff; border-bottom:4px solid #e6e6e6; position:sticky; top:0; z-index:50; }
+.header-inner { display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; padding:12px 20px; gap:20px; }
+.brand { display:flex; align-items:center; gap:12px; }
+.logo { height:56px; width:auto; }
+.site-title h1 { font-size:20px; font-weight:700; color:#1e1e1e; }
+.tagline { font-size:13px; color:#666; }
+
+/* NAV */
+.nav-toggle { display:none; background:#1e1e1e; color:#fff; border:none; padding:10px 16px; border-radius:6px; cursor:pointer; transition:0.3s; }
+.nav-toggle:hover { background:#333; }
+.nav-list { list-style:none; display:flex; gap:28px; align-items:center; transition:0.3s; }
+.nav-list a { padding:8px 12px; border-radius:6px; font-weight:600; transition:0.3s; }
+.nav-list a:hover, .nav-list a:focus { background:#7fc241; color:#fff; }
+
+/* HERO */
+.hero { position:relative; display:flex; align-items:center; justify-content:center; min-height:320px; overflow:hidden; }
+.hero-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:brightness(0.55); }
+.hero-content { position:relative; text-align:center; color:#fff; padding:40px 20px; max-width:1000px; }
+.hero-content h2 { font-size:28px; margin-bottom:8px; color:#dff2d8; }
+.hero-content p { font-size:16px; color:#eef7e6; }
+
+/* SECCIONES */
+.seccion { background:transparent; padding:36px 20px; max-width:1200px; margin:0 auto; opacity:1; }
+.seccion h2 { color:#2b7a0f; margin-bottom:16px; font-size:22px; }
+
+/* CARDS */
+.carreras { display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); }
+.card { background:#fff; border-left:6px solid #7fc241; padding:16px; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.04); }
+.card h3 { margin-bottom:8px; font-size:18px; }
+
+/* NOTICIAS */
+.noticia { display:flex; gap:12px; align-items:flex-start; background:#fff; padding:12px; border-radius:8px; margin-bottom:12px; box-shadow:0 1px 4px rgba(0,0,0,0.04); }
+.noticia img { width:140px; height:90px; object-fit:cover; border-radius:6px; }
+
+/* CONTACTO */
+.contact-grid { display:grid; grid-template-columns:1fr 320px; gap:20px; align-items:start; }
+.form-contacto { background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:10px; }
+.form-contacto label { font-size:14px; color:#333; }
+.form-contacto input, .form-contacto textarea { padding:10px; border:1px solid #cfcfcf; border-radius:6px; font-size:14px; }
+button { background:#7fc241; color:#fff; border:none; padding:10px 12px; border-radius:8px; cursor:pointer; font-weight:700; transition:0.3s; }
+button:hover { opacity:0.95; transform:translateY(-1px); }
+
+/* FOOTER */
+footer { background:#111; color:#fff; padding:18px 10px; margin-top:24px; }
+.footer-inner { max-width:1200px; margin:0 auto; text-align:center; font-size:14px; }
+
+/* RESPONSIVO */
+@media (max-width:900px){
+  .contact-grid { grid-template-columns:1fr; }
+  .nav-list { display:none; flex-direction:column; gap:12px; background:#fff; position:absolute; right:20px; top:72px; padding:16px; border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,0.12); width:200px; }
+  .nav-list.visible { display:flex; }
+  .nav-toggle { display:inline-block; }
+  .hero-content h2 { font-size:22px; }
+}
+
+/* FADE IN SCROLL */
+.hidden { opacity:0; transform:translateY(30px); transition:all 0.6s ease; }
+.visible { opacity:1; transform:translateY(0); }

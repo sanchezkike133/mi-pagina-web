@@ -182,34 +182,33 @@
       </article>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="seccion hidden" aria-labelledby="contacto-title"> <!-- Sección de contacto -->
-      <h2 id="contacto-title">Contacto</h2>
-      <div class="contact-grid"> <!-- Grid para formulario e información -->
-        <form class="form-contacto" action="#" method="POST"> <!-- Formulario de contacto -->
-          <label for="nombre">Nombre</label>
-          <input id="nombre" name="nombre" type="text" required /> <!-- Campo nombre -->
+    <section id="contacto" class="seccion hidden" aria-labelledby="contacto-title">
+  <h2 id="contacto-title">Contacto</h2>
+  <div class="contact-grid">
+    <form class="form-contacto" action="https://formspree.io/f/xrbdbdvr" method="POST">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" type="text" required />
 
-          <label for="correo">Correo electrónico</label>
-          <input id="correo" name="correo" type="email" required /> <!-- Campo correo -->
+      <label for="correo">Correo electrónico</label>
+      <input id="correo" name="correo" type="email" required />
 
-          <label for="asunto">Asunto</label>
-          <input id="asunto" name="asunto" type="text" required /> <!-- Campo asunto -->
+      <label for="asunto">Asunto</label>
+      <input id="asunto" name="asunto" type="text" required />
 
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea> <!-- Campo mensaje -->
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-          <button type="submit">Enviar</button> <!-- Botón enviar -->
-        </form>
+      <button type="submit">Enviar</button>
+    </form>
 
-        <div class="contact-info"> <!-- Información de contacto -->
-          <h3>Información</h3>
-          <p><strong>Dirección:</strong> AVENIDA UNIVERSIDAD SN, COLONIA LAS TINAJAS, 50660 SAN JOSÉ DEL RINCÓN, ESTADO DE MÉXICO.</p>
-          <p><strong>Teléfono:</strong> 7121242234</p>
-          <p><strong>Correo:</strong> uessanjosedelrincon@umb.mx</p>
-        </div>
-      </div>
-    </section>
+    <div class="contact-info">
+      <h3>Información</h3>
+      <p><strong>Dirección:</strong> AVENIDA UNIVERSIDAD SN, COLONIA LAS TINAJAS, 50660 SAN JOSÉ DEL RINCÓN, ESTADO DE MÉXICO.</p>
+      <p><strong>Teléfono:</strong> 7121242234</p>
+      <p><strong>Correo:</strong> uessanjosedelrincon@umb.mx</p>
+    </div>
+  </div>
+</section>
 
   </main>
 
@@ -236,6 +235,8 @@
   </footer>
 
   <!-- Scripts -->
+   <script src="JS/contacto.js"></script>
+
   <script src="JS/nav.js"></script> <!-- Script para navegación responsiva -->
   <script src="JS/scroll.js"></script> <!-- Script para scroll suave -->
   <script src="JS/scrollFade.js"></script> <!-- Script para animaciones de aparición al hacer scroll -->

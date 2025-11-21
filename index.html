@@ -1,33 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Unidad de Estudios Superiores San José del Rincón — UMB</title>
-  <meta name="description" content="Unidad de Estudios Superiores San José del Rincón - Universidad Mexiquense del Bicentenario. Consulta oferta educativa, misión, visión, noticias y contacto." />
-  <meta name="keywords" content="UMB, San José del Rincón, Unidad de Estudios Superiores, carreras, universidad, educación" />
-  <link rel="stylesheet" href="../CSS/style.css" />
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Inicio del documento HTML, idioma español -->
+<head> <!-- Cabecera del documento, contiene metadatos y enlaces -->
+  <meta charset="utf-8" /> <!-- Codificación de caracteres UTF-8 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Compatibilidad con versiones antiguas de IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Optimiza el diseño para dispositivos móviles -->
+  <title>Unidad de Estudios Superiores San José del Rincón — UMB</title> <!-- Título que aparece en la pestaña del navegador -->
+  <meta name="description" content="Unidad de Estudios Superiores San José del Rincón - Universidad Mexiquense del Bicentenario. Consulta oferta educativa, misión, visión, noticias y contacto." /> <!-- Descripción para motores de búsqueda -->
+  <meta name="keywords" content="UMB, San José del Rincón, Unidad de Estudios Superiores, carreras, universidad, educación" /> <!-- Palabras clave para SEO -->
+  <meta name="author" content="Enrique Sánchez Ramírez"> <!-- Autor del documento -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Enlace a la biblioteca de iconos -->
+
+  <!-- Favicon local -->
+  <link rel="icon" type="image/jpeg" sizes="32x32" href="Images/fac21.jpeg"> <!-- Icono de pestaña -->
+  <link rel="shortcut icon" href="Images/fac21.jpeg" type="image/jpeg"> <!-- Icono alternativo -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/style.css" /> <!-- Archivo CSS principal -->
 </head>
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <a class="skip-link" href="#main">Saltar al contenido</a> <!-- Enlace accesible para saltar directamente al contenido -->
 
   <!-- HEADER -->
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <div class="brand">
-        <img src="../Images/image.png" alt="Logo UMB" class="logo" />
-        <div class="site-title">
-          <h1>Unidad de Estudios Superiores San José del Rincón</h1>
-          <p class="tagline">Universidad Mexiquense del Bicentenario</p>
+  <header class="site-header" role="banner"> <!-- Encabezado principal del sitio -->
+    <div class="header-inner"> <!-- Contenedor interno del header -->
+      <div class="brand"> <!-- Logo y nombre del sitio -->
+        <img src="Images/image.png" alt="Logo UMB" class="logo" /> <!-- Logo de la universidad -->
+        <div class="site-title"> <!-- Nombre y lema -->
+          <h1>Unidad de Estudios Superiores San José del Rincón</h1> <!-- Título principal -->
+          <p class="tagline">Universidad Mexiquense del Bicentenario</p> <!-- Lema o subtítulo -->
         </div>
       </div>
 
-      <nav class="main-nav" role="navigation" aria-label="Menú principal">
-        <button aria-expanded="false" id="nav-toggle" class="nav-toggle">Menú</button>
-        <ul id="nav-list" class="nav-list">
+      <!-- Navegación -->
+      <nav class="main-nav" role="navigation" aria-label="Menú principal"> <!-- Barra de navegación -->
+        <button aria-expanded="false" id="nav-toggle" class="nav-toggle"> <!-- Botón de menú para móvil -->
+          <span class="bar"></span> <!-- Barra visual del botón -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          Menú <!-- Texto del botón -->
+        </button>
+        <ul id="nav-list" class="nav-list"> <!-- Lista de enlaces del menú -->
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#universidad">La Universidad</a></li>
-          <li><a href="#oferta">Oferta Educativa</a></li>
+          <li><a href="#universidad">Acerca de</a></li>
+          <li><a href="#oferta">Oferta <br>Educativa</a></li>
           <li><a href="#noticias">Noticias</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -36,31 +53,32 @@
   </header>
 
   <!-- MAIN -->
-  <main id="main">
+  <main id="main"> <!-- Contenedor principal del contenido -->
+
     <!-- HERO -->
-    <section id="inicio" class="hero" aria-labelledby="hero-title">
-      <img src="../Images/img2.jpg" alt="Edificio UMB" class="hero-img" />
-      <div class="hero-content">
-        <h2 id="hero-title">Formando profesionales para el desarrollo regional</h2>
-        <p>Excelencia académica, compromiso social y formación integral en San José del Rincón.</p>
+    <section id="inicio" class="hero" aria-labelledby="hero-title"> <!-- Sección principal con imagen destacada -->
+      <img src="Images/img2.jpg" alt="Edificio UMB" class="hero-img" /> <!-- Imagen hero -->
+      <div class="hero-content hidden"> <!-- Contenido sobre la imagen, inicialmente oculto -->
+        <h2 id="hero-title">Formando profesionales para el desarrollo regional</h2> <!-- Título principal de la sección -->
+        <p>Excelencia académica, compromiso social y formación integral en San José del Rincón.</p> <!-- Descripción -->
       </div>
     </section>
 
     <!-- UNIVERSIDAD -->
-    <section id="universidad" class="seccion" aria-labelledby="uni-title">
-      <h2 id="uni-title">Misión, Visión y Valores</h2>
+    <section id="universidad" class="seccion hidden" aria-labelledby="uni-title"> <!-- Sección Misión, Visión y Valores -->
+      <h2 id="uni-title">Misión, Visión y Valores</h2> <!-- Título de la sección -->
 
-      <article class="mision">
+      <article class="mision"> <!-- Artículo de misión -->
         <h3>Misión</h3>
         <p>Brindar formación superior de calidad, vinculada con las necesidades regionales, promoviendo investigación, cultura y servicio a la comunidad.</p>
       </article>
 
-      <article class="vision">
+      <article class="vision"> <!-- Artículo de visión -->
         <h3>Visión</h3>
         <p>Ser una institución reconocida por su innovación educativa y contribución al desarrollo del Estado de México.</p>
       </article>
 
-      <article class="valores">
+      <article class="valores"> <!-- Artículo de valores -->
         <h3>Valores</h3>
         <ul>
           <li>Responsabilidad</li>
@@ -73,67 +91,118 @@
     </section>
 
     <!-- OFERTA EDUCATIVA -->
-    <section id="oferta" class="seccion" aria-labelledby="oferta-title">
-      <h2 id="oferta-title">Oferta Educativa</h2>
+    <section id="oferta" class="seccion hidden" aria-labelledby="oferta-title"> <!-- Sección de carreras -->
+      <h2 id="oferta-title">Oferta Educativa</h2> <!-- Título de la sección -->
 
-      <div class="carreras">
-        <article class="carrera card">
+      <div class="carreras"> <!-- Contenedor de artículos de carreras -->
+
+        <article class="carrera card hidden"> <!-- Carrera 1 -->
           <h3>Ingeniería en Innovación Agrícola Sustentable</h3>
           <p>Formación multidisciplinaria para diseñar, optimizar y administrar sistemas de producción agrícola con enfoque sustentable.</p>
+          <details> <!-- Contenido expandible -->
+            <summary>Ver más detalles</summary>
+            <p><strong>Objetivo:</strong> Formar profesionistas con alto sentido humanista y de servicio en Ingeniería en Innovación Agrícola Sustentable.</p>
+            <p><strong>Perfil del egresado:</strong> Desarrolla innovaciones en sectores productivos y servicios agrícolas considerando condiciones ecológicas y socioeconómicas.</p>
+            <p><strong>Campo de trabajo:</strong> Dependencias gubernamentales, ONGs, cultivos orgánicos, invernaderos, riego, nutrición y manejo de plagas.</p>
+          </details>
         </article>
 
-        <article class="carrera card">
+        <article class="carrera card hidden"> <!-- Carrera 2 -->
           <h3>Ingeniería en Sistemas Computacionales</h3>
           <p>Formación en desarrollo de software, bases de datos, programación y sistemas operativos.</p>
+          <details>
+            <summary>Ver más detalles</summary>
+            <p><strong>Objetivo:</strong> Formar profesionales con conocimiento sólido en diseño y análisis de sistemas de información y programación.</p>
+            <p><strong>Perfil del egresado:</strong> Desarrolla e implementa software, diseña interfaces y administra bases de datos.</p>
+            <p><strong>Campo de trabajo:</strong> Empresas de software, asesoría, diseño de redes, mantenimiento de sistemas, desarrollo independiente.</p>
+          </details>
         </article>
 
-        <article class="carrera card">
+        <article class="carrera card hidden"> <!-- Carrera 3 -->
           <h3>Licenciatura en Contaduría</h3>
           <p>Preparación en administración financiera, contabilidad y auditoría para la toma de decisiones.</p>
+          <details>
+            <summary>Ver más detalles</summary>
+            <p><strong>Objetivo:</strong> Formar profesionales capaces de administrar y controlar recursos financieros, evaluar estados contables y tomar decisiones estratégicas.</p>
+            <p><strong>Perfil del egresado:</strong> Habilidad para elaborar estados financieros, auditorías, análisis de costos, presupuestos y consultoría fiscal.</p>
+            <p><strong>Campo de trabajo:</strong> Empresas privadas, despachos contables, instituciones gubernamentales, consultoría financiera y auditoría.</p>
+          </details>
         </article>
+
       </div>
     </section>
 
     <!-- NOTICIAS -->
-    <section id="noticias" class="seccion" aria-labelledby="news-title">
+    <section id="noticias" class="seccion hidden" aria-labelledby="news-title"> <!-- Sección de noticias -->
       <h2 id="news-title">Noticias y Eventos</h2>
 
-      <article class="noticia">
-        <img src="../Images/img_1" alt="Semana Cultural UMB" />
+      <article class="noticia hidden"> <!-- Noticia 1 -->
+        <img src="Images/fac17.jpeg" alt="Semana Cultural UMB" /> <!-- Imagen noticia -->
         <div>
-          <h3>Semana Cultural 2025</h3>
-          <time datetime="2025-06-03">3 - 7 de junio de 2025</time>
-          <p>Actividades académicas, deportivas y culturales abiertas a la comunidad.</p>
+          <h3>Semana Cultural 2025</h3> <!-- Título -->
+          <time datetime="2025-06-03">junio de 2025</time> <!-- Fecha -->
+          <p>Actividades académicas, deportivas y culturales abiertas a la comunidad.</p> <!-- Descripción -->
         </div>
       </article>
 
-      <article class="noticia">
-        <img src="../Images/img_2.jpg" alt="Graduación UMB" />
+      <article class="noticia hidden"> <!-- Noticia 2 -->
+        <img src="Images/fac12.jpeg" alt="Graduación UMB" />
         <div>
-          <h3>Ceremonia de Graduación</h3>
-          <time datetime="2025-12-15">15 de diciembre de 2025</time>
+          <h3>Ceremonia de graduación</h3>
+          <time datetime="2025-12-15">diciembre de 2025</time>
           <p>Entrega de títulos y reconocimientos a egresados.</p>
+        </div>
+      </article>
+
+      <article class="noticia hidden"> <!-- Noticia 3 -->
+        <img src="Images/fac2.jpeg" alt="Taller de Innovación UMB" />
+        <div>
+          <h3>Taller de Innovación 2025</h3>
+          <time datetime="2025-07-10">julio de 2025</time>
+          <p>Capacitación en tecnologías emergentes para estudiantes y docentes.</p>
+        </div>
+      </article>
+
+      <article class="noticia hidden"> <!-- Noticia 4 -->
+        <img src="Images/fac9.jpeg" alt="Nuevo Edificio UMB" />
+        <div>
+          <h3>Nuevo Edificio Académico</h3>
+          <time datetime="2025-09-01">septiembre de 2025</time>
+          <p>Se inicio con el trabajo para la elaboración de un nuevo edificio en la unidad.</p>
+        </div>
+      </article>
+
+      <article class="noticia hidden"> <!-- Noticia 5 -->
+        <img src="Images/fac3.jpeg" alt="Conferencia de Ciencia y Tecnología" />
+        <div>
+          <h3>Conferencia de Ciencia y Tecnología</h3>
+          <time datetime="2025-10-12">octubre de 2025</time>
+          <p>Expertos nacionales e internacionales presentan avances científicos y tecnológicos.</p>
         </div>
       </article>
     </section>
 
     <!-- CONTACTO -->
-    <section id="contacto" class="seccion" aria-labelledby="contacto-title">
+    <section id="contacto" class="seccion hidden" aria-labelledby="contacto-title"> <!-- Sección de contacto -->
       <h2 id="contacto-title">Contacto</h2>
-      <div class="contact-grid">
-        <form class="form-contacto" action="#" method="POST">
+      <div class="contact-grid"> <!-- Grid para formulario e información -->
+        <form class="form-contacto" action="#" method="POST"> <!-- Formulario de contacto -->
           <label for="nombre">Nombre</label>
-          <input id="nombre" name="nombre" type="text" required />
+          <input id="nombre" name="nombre" type="text" required /> <!-- Campo nombre -->
+
           <label for="correo">Correo electrónico</label>
-          <input id="correo" name="correo" type="email" required />
+          <input id="correo" name="correo" type="email" required /> <!-- Campo correo -->
+
           <label for="asunto">Asunto</label>
-          <input id="asunto" name="asunto" type="text" required />
+          <input id="asunto" name="asunto" type="text" required /> <!-- Campo asunto -->
+
           <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-          <button type="submit">Enviar</button>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea> <!-- Campo mensaje -->
+
+          <button type="submit">Enviar</button> <!-- Botón enviar -->
         </form>
 
-        <div class="contact-info">
+        <div class="contact-info"> <!-- Información de contacto -->
           <h3>Información</h3>
           <p><strong>Dirección:</strong> AVENIDA UNIVERSIDAD SN, COLONIA LAS TINAJAS, 50660 SAN JOSÉ DEL RINCÓN, ESTADO DE MÉXICO.</p>
           <p><strong>Teléfono:</strong> 7121242234</p>
@@ -141,17 +210,45 @@
         </div>
       </div>
     </section>
+
   </main>
 
-  <footer>
+  <!-- FOOTER -->
+  <footer> <!-- Pie de página -->
     <div class="footer-inner">
-      <p>© 2025 Universidad Mexiquense del Bicentenario — Unidad de Estudios Superiores San José del Rincón</p>
+      <p>© 2025 Universidad Mexiquense del Bicentenario — Unidad de Estudios Superiores San José del Rincón</p> <!-- Copyright -->
     </div>
+
+    <!-- Redes sociales -->
+    <div class="social-icons"> <!-- Iconos con Font Awesome -->
+      <a href="https://www.facebook.com/UMBSanJosedelRincon" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/+52 1 712 113 4092" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/umbuniversidad/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <div class="social-icons"> <!-- Iconos con imágenes -->
+      <a href="https://www.facebook.com/tu-pagina" target="_blank">
+        <img src="Images/facebook.png" alt="Facebook" />
+      </a>
+      <a href="https://wa.me/tu-numero" target="_blank">
+        <img src="Images/whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.instagram.com/tu-pagina" target="_blank">
+        <img src="Images/instagram.png" alt="Instagram" />
+      </a>
+    </div>
+
   </footer>
 
   <!-- Scripts -->
-  <script src="../JS/nav.js"></script>
-  <script src="../JS/scroll.js"></script>
-  <script src="../JS/scrollFade.js"></script>
+  <script src="JS/nav.js"></script> <!-- Script para navegación responsiva -->
+  <script src="JS/scroll.js"></script> <!-- Script para scroll suave -->
+  <script src="JS/scrollFade.js"></script> <!-- Script para animaciones de aparición al hacer scroll -->
 </body>
 </html>
